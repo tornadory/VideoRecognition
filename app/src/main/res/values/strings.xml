@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="app_name">VideoRecognition</string>
+
+<!-- Main menu-->
+    <string name="MainMenu_settings">Settings</string>
+
+<!-- cameraFragment -->
+    <string name="cameraFragment">Camera fragment</string>
+
+<!-- settingsFragment -->
+    <string name="settingsFragment">Application settings</string>
+    <string name="settingsSaveAndReturn">Save and return</string>
+    <string name="settingsReturn">return</string>
+
+<!-- errorStrings -->
+    <string name="unknownItemOnClick">Unknown item clicked</string>
+
+</resources>

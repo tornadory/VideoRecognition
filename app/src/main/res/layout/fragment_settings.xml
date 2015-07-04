@@ -1,0 +1,53 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.mike.videorecognition.SettingsFragment">
+    <TextView
+        android:id="@+id/settingsCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settingsFragment"
+        android:layout_alignParentTop="true"
+        android:gravity="center"/>
+    <RelativeLayout
+        android:id="@+id/buttonsPanel"
+        android:layout_below="@+id/settingsCaption"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/settingsSaveAndReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settingsSaveAndReturn"
+            android:onClick="itemOnClick"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:id="@+id/settingsReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settingsReturn"
+            android:onClick="itemOnClick"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/buttonsPanel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settingsFragment"
+            android:layout_alignParentTop="true"
+            android:gravity="center"/>
+    </ScrollView>
+
+</RelativeLayout>
