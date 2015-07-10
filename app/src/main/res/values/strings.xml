@@ -15,5 +15,9 @@
 
 <!-- errorStrings -->
     <string name="unknownItemOnClick">Unknown item clicked</string>
+    <string name="dataLayout">Data Layout</string>
+    <string name="filesPath">Path to saved files</string>
+    <string name="dbPath">Path to SQLite database</string>
+    <string name="rootPath">Path to root application folder on SD card</string>
 
 </resources>

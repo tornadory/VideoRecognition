@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 
@@ -66,7 +67,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void saveSettings() {
-        //TODO save application settings
+        ((GlobalData)getApplication().getApplicationContext())
+                .SaveSettings(((EditText)findViewById(R.id.rootPath)).getText().toString(),
+                        ((EditText)findViewById(R.id.dbPath)).getText().toString(),
+                        ((EditText)findViewById(R.id.filesPath)).getText().toString());
     }
 
 }

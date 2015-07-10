@@ -1,4 +1,5 @@
 <RelativeLayout
+    android:id="@+id/settingsFragment"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -42,12 +43,41 @@
         android:layout_below="@+id/buttonsPanel"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="48dp">
-        <TextView
-            android:layout_width="match_parent"
+
+        <LinearLayout
+            android:id="@+id/settingsLayout"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/settingsFragment"
-            android:layout_alignParentTop="true"
-            android:gravity="center"/>
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rootPath"/>
+            <EditText
+                android:id="@+id/rootPath"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dbPath"/>
+            <EditText
+                android:id="@+id/dbPath"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/filesPath"/>
+            <EditText
+                android:id="@+id/filesPath"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
     </ScrollView>
 
 </RelativeLayout>
